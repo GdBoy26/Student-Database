@@ -18,7 +18,7 @@ const EditStudent = () => {
   useEffect(() => {
     const fetchStudent = async () => {
       try {
-        const res = await axios.get(`https://student-database-backend-d6z6.onrender.com/${id}`);
+        const res = await axios.get(`https://student-database-backend-ejr0.onrender.com/${id}`);
         setFormData(res.data);
       } catch (error) {
         toast.error("Error loading student data");
@@ -35,7 +35,7 @@ const EditStudent = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await axios.put(`https://student-database-backend-d6z6.onrender.com/${id}`, formData);
+      await axios.put(`https://student-database-backend-ejr0.onrender.com/${id}`, formData);
       toast.success("Student Updated Successfully");
       navigate("/students");
     } catch (error) {
