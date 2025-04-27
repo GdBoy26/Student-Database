@@ -8,7 +8,7 @@ const StudentList = () => {
   const [searchTerm, setSearchTerm] = useState("");
 
   const fetchStudents = async () => {
-    const res = await axios.get("http://localhost:5000/students");
+    const res = await axios.get("https://student-database-backend-d6z6.onrender.com");
     setStudents(res.data);
   };
 
@@ -18,7 +18,7 @@ const StudentList = () => {
 
   const deleteStudent = async (id) => {
     if (window.confirm("Are you sure you want to delete this student?")) {
-      await axios.delete(`http://localhost:5000/students/${id}`);
+      await axios.delete(`https://student-database-backend-d6z6.onrender.com/${id}`);
       toast.success("Student Deleted");
       fetchStudents();
     }
