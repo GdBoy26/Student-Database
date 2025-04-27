@@ -1,0 +1,31 @@
+/* Add this to your StudentList.js file or create StudentList.css */
+.student-list-container {
+    padding: 20px;
+  }
+  
+  .student-list-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .student-list-title {
+    margin: 0;
+    color: #2c3e50;
+  }
+  
+  .action-buttons {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .search-bar {
+    margin-bottom: 20px;
+  }
+  
+  .no-students {
+    text-align: center;
+    padding: 40px;
+    color: #7f8c8d;
+  }
