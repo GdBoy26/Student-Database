@@ -21,7 +21,7 @@ const AddStudent = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await axios.post("https://student-database-backend-d6z6.onrender.com", formData);
+      await axios.post("https://student-database-backend-ejr0.onrender.com", formData);
       toast.success("Student Added Successfully");
       navigate("/students");
     } catch (error) {
